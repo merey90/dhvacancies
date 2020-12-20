@@ -58,7 +58,9 @@ bot.command("search", async (ctx) => {
     };
   });
 
-  const myJobs = cleanJobs.filter((job) => job.title.includes("Typescript"));
+  const myJobs = cleanJobs.filter((job) => job.title.includes("junior"));
+
+  if (!myJobs.length) return ctx.reply("No results found.");
 
   for (let job of myJobs) {
     ctx.reply("Found job");
