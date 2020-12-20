@@ -58,7 +58,7 @@ bot.command("search", async (ctx) => {
     };
   });
 
-  const myJobs = cleanJobs.filter((job) => job.title.includes("junior"));
+  const myJobs = cleanJobs.filter((job) => job.title.includes("senior"));
 
   if (!myJobs.length) return ctx.reply("No results found.");
 
