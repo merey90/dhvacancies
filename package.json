@@ -1,0 +1,17 @@
+{
+  "name": "dhvacancies",
+  "version": "1.0.0",
+  "description": "Telegram bot which looks for vacancies in DeliveryHero SE",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Merey Zholdas",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "telegraf": "^3.38.0"
+  }
+}
